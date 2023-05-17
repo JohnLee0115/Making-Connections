@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Container for the entire webpage -->
+    <div class="container">
+        <!-- Navigation bar section -->
+        <div class="navbar">
+            <div class="profile">
+                <h1>Profile</h1>
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Find Connections</li>
+                </ul>
+            </div>
+            <div class="signoutbut">
+                <button class="btn">Sign Out</button>
+            </div>
+        </div>
+        <!-- Container for the space below the navigation bar which holds main content -->
+        <div class="belownavbar">
+            <!-- Left half of below the navigation bar which holds the profilecard and education boxes/content -->
+            <div class="lefthalf">
+                <div class="profilecard">
+                    <!-- First half of the profile card only contains the background color which is a dark teal -->
+                    <div class="firsthalf">
+                        <!-- image of the profile pic which goes between the first and second half -->
+                        <img class="pic1" src="./images/user-circle.png" alt="profileicon">
+                    </div>
+                    <!-- Second half of the profile card contains the content of the profile card -->
+                    <div class="secondhalf">
+                        <h2 class="jane">Jane Doe</h2>
+                        <div class="location">
+                            <img class="pic2" src="./images/map-marker.png" alt="locationicon">
+                            <h2>Seattle</h2>
+                        </div>
+                        <ul class="jobexperience">
+                            <li>Developer</li>
+                            <li>|</li>
+                            <li>Engineer</li>
+                            <li>|</li>
+                            <li>Problem Solver</li>
+                        </ul>
+                        <div class="description">
+                            <h3>Master of shadows and the Internet!</h3>
+                        </div>
+                        <div class="editprofile">
+                            <img class="pic3" src="./images/gear.png" alt="settingsicon">
+                            <a href="#" class="active" onclick="changeName()">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education card which is below the profile card -->
+                <div class="education">
+                    <div class="title">
+                        <h2 class="educationtit">Education</h2>
+                    </div>
+                    <h2 class="experience1">Coding Dojo - Full Stack Bootcamp</h2>
+                    <h3 class="experience2">Dec 2019 - Mar 2020</h3>
+                    <h3 class="experience3">Triple black belt in Python, MERN, and C#...</h3>
+                </div>
+            </div>
+            <!-- Right half of below the navigation bar which holds the connection requests and you connections sections -->
+            <div class="righthalf">
+                <!-- Connection request card on the right half of below the navigation bar -->
+                <div class="connectionreq">
+                    <div class="conreqtitle">
+                        <div class="num2" id="numb2">2</div>
+                        <h2 class="conreq">Connection Requests</h2>
+                    </div>
+                    <div class="firstconnection">
+                        <img src="./images/todd-s.jpg" alt="todd" class="conimg">
+                        <div class="todde">Todd E.</div>
+                        <img class="tpimg" src="./images/accept-circle.png" alt="accept" onclick="fallfunc()">
+                        <img class="tpimg" src="./images/close-circle.png" alt="decline" onclick="fbothfunc()">
+                    </div>
+                    <div class="secondconnection">
+                        <img src="./images/phil-s.jpg" alt="phil" class="conimg">
+                        <div class="philk">Phil K.</div>
+                        <img class="tpimg" src="./images/accept-circle.png" alt="accept" onclick="sallfunc()">
+                        <img class="tpimg" src="./images/close-circle.png" alt="decline" onclick="sbothfunc()">
+                    </div>
+                </div>
+                <!-- Your connections card right below the connection requests card -->
+                <div class="yourconnections">
+                    <div class="yourconntitle">
+                        <div class="numb500">500</div>
+                        <h2 class="urconnections">Your Connections</h2>
+                    </div>
+                    <!-- Content within the your connections card ie. connection name -->
+                    <div class="connection">
+                        <img class="img" src="./images/adrien-s.jpg" alt="adrienimg">
+                        <h3>Adrien D.</h3>
+                    </div>
+                    <div class="connection">
+                        <img src="./images/anne-s.jpg" alt="anneimg" class="img">
+                        <h3>Anne J.</h3>
+                    </div>
+                    <div class="connection">
+                        <img src="./images/alayne-s.jpg" alt="alayneimg" class="img">
+                        <h3>Alayne T.</h3>
+                    </div>
+                    <div class="connection">
+                        <img src="./images/arry-s.jpg" alt="arryimg" class="img">
+                        <h3>Arry Y.</h3>
+                    </div>
+                    <div class="viewmore">
+                        <a href="#" class="active">View More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
